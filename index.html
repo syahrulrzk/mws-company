@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MWS – CEMS End-to-End | Book Demo</title>
+    <meta name="description" content="Solusi CEMS end-to-end: kajian teknis, instalasi, kalibrasi ISO 17025, maintenance 24/7, pelaporan otomatis sesuai KLHK. Siap PROPER dan 0-downtime.">
+    <link rel="icon" type="image/png" href="img/icon-msw.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      html { scroll-behavior: smooth; }
+      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif; }
+      .snap-y { scroll-snap-type: y mandatory; scroll-padding-top: 4rem; }
+      .snap { scroll-snap-align: start; scroll-margin-top: 4rem; }
+      .vh { min-height: 100vh; }
+      .no-scroll-margin { scroll-margin-top: 0; }
+    </style>
+  </head>
+  <body class="bg-white text-slate-800">
+    <header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="#home" class="flex items-center gap-3">
+          <img src="img/icon-msw.png" alt="Logo MWS" class="h-8 w-auto rounded">
+          <span class="font-semibold">PT. Mrene Wae Solusi</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-2 sm:gap-3 text-sm flex-nowrap overflow-x-auto max-w-[60%]" role="tablist" aria-label="Halaman">
+          <button data-tab="#home" role="tab" aria-selected="true" class="inline-flex items-center whitespace-nowrap shrink-0 px-3 py-2 rounded hover:bg-slate-100">Home</button>
+          <button data-tab="#about" role="tab" aria-selected="false" class="inline-flex items-center whitespace-nowrap shrink-0 px-3 py-2 rounded hover:bg-slate-100">About Us</button>
+          <button data-tab="#layanan" role="tab" aria-selected="false" class="inline-flex items-center whitespace-nowrap shrink-0 px-3 py-2 rounded hover:bg-slate-100">Product & Service</button>
+          <button data-tab="#clients" role="tab" aria-selected="false" class="inline-flex items-center whitespace-nowrap shrink-0 px-3 py-2 rounded hover:bg-slate-100">Clients</button>
+          <button data-tab="#form" role="tab" aria-selected="false" class="inline-flex items-center whitespace-nowrap shrink-0 px-3 py-2 rounded hover:bg-slate-100">Contact</button>
+          <button data-tab="#cek" role="tab" aria-selected="false" class="inline-flex items-center whitespace-nowrap shrink-0 px-3 py-2 rounded hover:bg-emerald-50 text-emerald-700 border border-emerald-200">Cek Industrimu</button>
+        </nav>
+        <div class="hidden md:flex items-center gap-3"></div>
+      </div>
+    </header>
+
+    <main class="pt-16 sm:pt-20 snap-y">
+      
+      <section id="home" class="relative snap vh no-scroll-margin">
+        <img src="img/bg-1.jpg" alt="CEMS di pabrik" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[calc(100vh-4rem)] text-white flex items-center">
+            <div class="max-w-3xl">
+              <h1 class="text-3xl sm:text-5xl font-bold leading-tight">CEMS Selalu ON, Laporan Otomatis, Siap PROPER</h1>
+              <p class="mt-5 text-base sm:text-lg text-slate-200">End-to-end CEMS: kajian teknis, supply, instalasi, kalibrasi, maintenance, audit kinerja, pelaporan terintegrasi. Tim bersertifikasi, respons komplain <span class="whitespace-nowrap">&lt;4 jam</span>, paket 0-downtime. Sesuai regulasi KLHK & ISO 17025.</p>
+              <div class="mt-6 flex flex-wrap gap-2 text-xs">
+                <span class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 border border-white/20">24/7 Support</span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 border border-white/20">Response &lt;4 jam</span>
+                <span class="inline-flex items-center px-3 py-1 rounded-full bg-white/10 border border-white/20">0‑Downtime Package</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="clients" class="py-16 sm:py-20 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-xl sm:text-2xl font-semibold">Dipercaya pabrik di tekstil, pulp & paper, semen, power plant, smelter</h2>
+          <div id="client-slider" class="mt-6 overflow-hidden">
+            <div class="flex gap-8 items-center whitespace-nowrap will-change-transform">
+              <img src="img/client/client-1.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-2.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-3.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-4.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-5.png" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-6.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-7.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-8.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-9.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-12.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-13.png" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-14.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-15.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-16.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-17.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-18.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-19.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-20.png" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-21.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-22.png" alt="Client" class="h-12 object-contain" loading="lazy">
+              <img src="img/client/client-23.jpg" alt="Client" class="h-12 object-contain" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="about" class="py-16 sm:py-20 bg-slate-50 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 gap-8">
+          <div>
+            <h2 class="text-2xl font-semibold">About Us</h2>
+            <ul class="mt-4 space-y-2 list-disc pl-5">
+              <li>MWS – PT. Mrene Wae Solusi, penyedia solusi CEMS end‑to‑end.</li>
+              <li>Tim ahli bersertifikasi, 24/7 support, respons komplain &lt;4 jam.</li>
+              <li>Komitmen 0‑downtime & kepatuhan regulasi KLHK & ISO 17025.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold">Visi & Nilai</h3>
+            <p class="mt-2">Menjadi partner tepercaya bagi industri dalam memastikan operasi stabil, data valid, dan lolos audit. Pendekatan kami: teknis, responsif, dan problem‑solver.</p>
+            <div class="mt-4 grid grid-cols-2 gap-4 text-sm">
+              <div class="p-4 rounded-lg bg-white border">0‑Downtime Package</div>
+              <div class="p-4 rounded-lg bg-white border">Dashboard real-time</div>
+              <div class="p-4 rounded-lg bg-white border">Audit kinerja & QA/QC</div>
+              <div class="p-4 rounded-lg bg-white border">Integrasi ERP/MES/SCADA</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="layanan" class="py-16 sm:py-20 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-semibold">Layanan Inti</h2>
+          <div class="mt-6 grid md:grid-cols-2 gap-6">
+            <div class="p-6 rounded-xl border">
+              <div class="flex items-center gap-3">
+                <img src="img/service/cems/cems1.png" alt="CEMS" class="h-10 w-10" loading="lazy">
+                <h3 class="text-xl font-semibold">CEMS End‑to‑End</h3>
+              </div>
+              <ul class="mt-4 space-y-2 list-disc pl-5">
+                <li>Kajian teknis & desain sistem</li>
+                <li>Supply, instalasi, commissioning</li>
+                <li>Kalibrasi, QA/QC, audit kinerja</li>
+                <li>Maintenance preventif & korektif (sparepart ready)</li>
+                <li>Dashboard real‑time & alarm</li>
+                <li>Pelaporan otomatis sesuai KLHK</li>
+              </ul>
+            </div>
+            <div class="p-6 rounded-xl border">
+              <div class="flex items-center gap-3">
+                <img src="img/calib.png" alt="IT & Software" class="h-10 w-10" loading="lazy">
+                <h3 class="text-xl font-semibold">IT & Software Custom</h3>
+              </div>
+              <ul class="mt-4 space-y-2 list-disc pl-5">
+                <li>Aplikasi bisnis & pelaporan lingkungan</li>
+                <li>Integrasi ERP/MES/SCADA</li>
+                <li>Digitalisasi SOP & workflow EHS</li>
+                <li>Visualisasi data & notifikasi (WA/email)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="proses" class="py-16 sm:py-20 bg-slate-50 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-semibold">Metodologi 4M</h2>
+          <div class="mt-6 grid md:grid-cols-4 gap-6">
+            <div class="p-6 rounded-xl border bg-white">
+              <h3 class="font-semibold">Measure</h3>
+              <p class="text-sm mt-2">Instalasi, kalibrasi terakreditasi, validasi alat.</p>
+            </div>
+            <div class="p-6 rounded-xl border bg-white">
+              <h3 class="font-semibold">Manage</h3>
+              <p class="text-sm mt-2">Dashboard real‑time, alarm threshold, role‑based access, integrasi.</p>
+            </div>
+            <div class="p-6 rounded-xl border bg-white">
+              <h3 class="font-semibold">Maintain</h3>
+              <p class="text-sm mt-2">PM plan, health check, remote diagnosis, SLA respons &lt;4 jam.</p>
+            </div>
+            <div class="p-6 rounded-xl border bg-white">
+              <h3 class="font-semibold">Monitor</h3>
+              <p class="text-sm mt-2">Audit kinerja, QA/QC, pelaporan otomatis sesuai KLHK & ISO 17025.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="roi" class="py-16 sm:py-20 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-semibold">ROI & Regulation Shield</h2>
+          <div class="mt-6 grid md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-xl border">
+              <h3 class="font-semibold">Kurangi Risiko Denda</h3>
+              <p class="text-sm mt-2">0‑downtime dan data valid mengurangi risiko denda hingga ratusan juta per insiden.</p>
+            </div>
+            <div class="p-6 rounded-xl border">
+              <h3 class="font-semibold">Hemat Jam Kerja</h3>
+              <p class="text-sm mt-2">Pelaporan otomatis & integrasi data menghemat ratusan jam kerja tim EHS.</p>
+            </div>
+            <div class="p-6 rounded-xl border">
+              <h3 class="font-semibold">Comply KLHK & ISO 17025</h3>
+              <p class="text-sm mt-2">Template laporan sesuai KLHK; proses kalibrasi mengikuti ISO 17025.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="testi" class="py-16 sm:py-20 bg-slate-50 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-semibold">Apa kata klien</h2>
+          <div id="testi-slider" class="mt-6 overflow-hidden">
+            <div class="flex gap-6">
+              <figure class="min-w-[280px] sm:min-w-[360px] p-6 rounded-xl border bg-white">
+                <blockquote class="text-sm">"Downtime berkurang drastis, audit lancar, tim responsif."</blockquote>
+                <figcaption class="mt-3 text-xs text-slate-600">EHS Manager — Pabrik Semen</figcaption>
+              </figure>
+              <figure class="min-w-[280px] sm:min-w-[360px] p-6 rounded-xl border bg-white">
+                <blockquote class="text-sm">"Integrasi data ke ERP memudahkan reporting bulanan kami."</blockquote>
+                <figcaption class="mt-3 text-xs text-slate-600">Compliance Officer — Pulp & Paper</figcaption>
+              </figure>
+              <figure class="min-w-[280px] sm:min-w-[360px] p-6 rounded-xl border bg-white">
+                <blockquote class="text-sm">"SLA &lt;4 jam itu nyata, alat kami selalu siap produksi."</blockquote>
+                <figcaption class="mt-3 text-xs text-slate-600">Plant Manager — Smelter</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="py-16 sm:py-20 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="rounded-2xl bg-emerald-600 text-white p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <h2 class="text-2xl font-semibold">Free Audit CEMS + Konsultasi 30 Menit</h2>
+              <p class="mt-2 text-sm text-emerald-100">Cek kesiapan audit, rekomendasi 0‑downtime, dan peta integrasi data.</p>
+            </div>
+            <a href="#form" class="px-5 py-3 rounded-lg bg-white text-emerald-700 font-semibold">Jadwalkan Sekarang</a>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="faq" class="py-16 sm:py-20 bg-slate-50 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-semibold">Pertanyaan yang sering ditanyakan</h2>
+          <div class="mt-6 space-y-3" id="faq-accordion">
+            <button class="w-full text-left p-4 rounded-lg border bg-white" aria-expanded="false">Apa itu CEMS dan kenapa wajib di pabrik kami?</button>
+            <div class="hidden p-4">CEMS memonitor emisi secara kontinu untuk memastikan kepatuhan regulasi dan stabilitas operasi. Wajib di banyak sektor industri.</div>
+            <button class="w-full text-left p-4 rounded-lg border bg-white" aria-expanded="false">Bagaimana MWS memastikan 0‑downtime & respons &lt;4 jam?</button>
+            <div class="hidden p-4">PM plan, health check, sparepart ready, remote diagnosis, tim 24/7, SLA respons &lt;4 jam.</div>
+            <button class="w-full text-left p-4 rounded-lg border bg-white" aria-expanded="false">Apakah laporan otomatis sesuai KLHK & ISO 17025?</button>
+            <div class="hidden p-4">Format & template pelaporan mengikuti ketentuan KLHK; proses kalibrasi sesuai ISO 17025.</div>
+            <button class="w-full text-left p-4 rounded-lg border bg-white" aria-expanded="false">Bisakah integrasi ke ERP/MES/SCADA & WhatsApp/email?</button>
+            <div class="hidden p-4">Ya, kami menyediakan integrasi data dan notifikasi lintas sistem.</div>
+            <button class="w-full text-left p-4 rounded-lg border bg-white" aria-expanded="false">Bagaimana skema kontrak maintenance & garansi?</button>
+            <div class="hidden p-4">Kontrak fleksibel: preventif/korektif, SLA jelas, garansi alat & pekerjaan sesuai scope.</div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="form" class="py-16 sm:py-20 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2 class="text-2xl font-semibold">Siapkan Pabrik Anda untuk Audit & Operasi Tanpa Gangguan</h2>
+              <p class="mt-2 text-slate-600">Isi form di samping untuk booking demo atau Free Audit CEMS. Data Anda aman, kami hanya menghubungi untuk keperluan konsultasi.</p>
+              <div class="mt-6 flex gap-3">
+                <a href="https://wa.me/6281234567890?text=Halo%20MWS%2C%20saya%20ingin%20booking%20demo%20CEMS" class="px-4 py-2 rounded-lg border border-emerald-600 text-emerald-700 hover:bg-emerald-50">Chat WhatsApp</a>
+                <a href="#faq" class="px-4 py-2 rounded-lg border">Lihat FAQ</a>
+              </div>
+            </div>
+            <form id="lead-form" class="p-6 rounded-xl border bg-slate-50">
+              <div class="grid grid-cols-1 gap-4">
+                <label class="block">
+                  <span class="text-sm">Nama</span>
+                  <input type="text" name="nama" required class="mt-1 w-full border rounded-lg p-2" placeholder="Nama lengkap">
+                </label>
+                <label class="block">
+                  <span class="text-sm">Perusahaan</span>
+                  <input type="text" name="perusahaan" required class="mt-1 w-full border rounded-lg p-2" placeholder="Nama perusahaan">
+                </label>
+                <label class="block">
+                  <span class="text-sm">Email</span>
+                  <input type="email" name="email" required class="mt-1 w-full border rounded-lg p-2" placeholder="email@perusahaan.com">
+                </label>
+                <label class="block">
+                  <span class="text-sm">Phone</span>
+                  <input type="tel" name="phone" required class="mt-1 w-full border rounded-lg p-2" placeholder="08xxxxxxxxxx">
+                </label>
+                <label class="block">
+                  <span class="text-sm">Pilihan Layanan</span>
+                  <select name="layanan" required class="mt-1 w-full border rounded-lg p-2">
+                    <option value="CEMS">CEMS</option>
+                    <option value="IT">IT & Software</option>
+                    <option value="Keduanya">Keduanya</option>
+                  </select>
+                </label>
+                <label class="block">
+                  <span class="text-sm">Pesan</span>
+                  <textarea name="pesan" rows="4" class="mt-1 w-full border rounded-lg p-2" placeholder="Kondisi di pabrik Anda..."></textarea>
+                </label>
+                <button type="submit" class="mt-2 px-5 py-3 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold">Kirim & Jadwalkan Demo</button>
+                <p id="form-status" class="text-sm text-slate-600"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="cek" class="py-16 sm:py-20 bg-emerald-50 snap vh">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-semibold">Cek Industrimu</h2>
+          <p class="mt-2 text-slate-700">Pilih sektor industri Anda untuk rekomendasi CEMS & integrasi yang tepat.</p>
+          <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <button class="p-4 rounded-xl border bg-white" data-industri="tekst il">Tekstil</button>
+            <button class="p-4 rounded-xl border bg-white" data-industri="pulp">Pulp & Paper</button>
+            <button class="p-4 rounded-xl border bg-white" data-industri="semen">Semen</button>
+            <button class="p-4 rounded-xl border bg-white" data-industri="power">Power Plant</button>
+            <button class="p-4 rounded-xl border bg-white" data-industri="smelter">Smelter</button>
+            <button class="p-4 rounded-xl border bg-white" data-industri="lain">Lainnya</button>
+          </div>
+          <div id="cek-output" class="mt-6 text-sm text-slate-700"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="border-t">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-3 gap-6">
+        <div>
+          <div class="flex items-center gap-3">
+            <img src="img/Logo1.jpg" alt="Logo MWS" class="h-8 w-auto rounded">
+            <span class="font-semibold">MWS – PT. Mrene Wae Solusi</span>
+          </div>
+          <p class="mt-2 text-sm text-slate-600">Solusi CEMS end‑to‑end dan digitalisasi lingkungan untuk industri di Indonesia.</p>
+        </div>
+        <div class="text-sm">
+          <p>Alamat • Email • Phone • Sosmed</p>
+          <p class="mt-1">Logo ISO & KLHK</p>
+        </div>
+        <div class="text-sm text-slate-600">© 2025 MWS. Semua hak cipta dilindungi. • Kebijakan Privasi</div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
