@@ -518,3 +518,57 @@ function initializeImageSlider() {
   // Start auto slide
   startAutoSlide();
 }
+
+// Contact form submission
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('lead-form');
+  const formStatus = document.getElementById('form-status');
+  
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Show loading message
+      formStatus.textContent = 'Mengirim pesan...';
+      formStatus.className = 'text-sm text-slate-600';
+      
+      // Disable submit button during submission
+      const submitButton = form.querySelector('button[type="submit"]');
+      const originalButtonText = submitButton.textContent;
+      submitButton.textContent = 'Mengirim...';
+      submitButton.disabled = true;
+      
+      // Get form data
+      const formData = new FormData(form);
+      
+      // Add hidden fields
+      formData.append('_subject', 'Pesan Baru dari Website MWS');
+      formData.append('_cc', 'syahrulrizki318@gmail.com');
+      
+      // Send form data using fetch
+      fetch('https://formspree.io/f/xyzldkpn', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          formStatus.textContent = 'Pesan berhasil dikirim! Kami akan segera menghubungi Anda.';
+          formStatus.className = 'text-sm text-green-600';
+          form.reset();
+        } else {
+          formStatus.textContent = 'Gagal mengirim pesan. Silakan coba lagi.';
+          formStatus.className = 'text-sm text-red-600';
+        }
+      }).catch(error => {
+        formStatus.textContent = 'Gagal mengirim pesan. Silakan coba lagi.';
+        formStatus.className = 'text-sm text-red-600';
+      }).finally(() => {
+        // Re-enable submit button
+        submitButton.textContent = originalButtonText;
+        submitButton.disabled = false;
+      });
+    });
+  }
+});
