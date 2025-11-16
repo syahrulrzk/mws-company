@@ -571,4 +571,42 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
+  
+  // Mobile dropdown functionality
+  const mobileDropdownToggles = document.querySelectorAll('#mobile-menu .flex.justify-between.items-center');
+  
+  mobileDropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const submenu = this.nextElementSibling;
+      const icon = this.querySelector('svg');
+      
+      // Toggle submenu visibility
+      submenu.classList.toggle('hidden');
+      
+      // Rotate icon
+      if (submenu.classList.contains('hidden')) {
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        icon.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+  
+  // Desktop dropdown functionality
+  const desktopDropdowns = document.querySelectorAll('#main-nav .relative.group');
+  
+  desktopDropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector('button');
+    const menu = dropdown.querySelector('.absolute');
+    
+    // Show dropdown on mouse enter
+    toggle.addEventListener('mouseenter', function() {
+      menu.style.display = 'block';
+    });
+    
+    // Hide dropdown when mouse leaves the dropdown area
+    dropdown.addEventListener('mouseleave', function() {
+      menu.style.display = 'none';
+    });
+  });
 });
