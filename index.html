@@ -9,6 +9,9 @@
   <script src="https://formspree.io/js/formbutton-v1.0.0.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <style type="text/tailwindcss">
     @layer base {
       body {
@@ -97,13 +100,13 @@
 
     <main class="snap-y">
       
-      <section id="home" class="relative snap vh no-scroll-margin">
+      <section id="home" class="relative snap vh no-scroll-margin" data-aos="fade-in">
         <!-- Background slideshow container -->
         <div id="bg-slideshow" class="absolute inset-0 w-full h-full">
-          <img src="img/bg-1.jpg" alt="CEMS di pabrik" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" loading="eager">
+          <img src="img/bg-4.jpg" alt="CEMS di pabrik" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000" loading="eager">
           <img src="img/bg-2.jpg" alt="CEMS di pabrik" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" loading="lazy">
+          <img src="img/bg-1.jpg" alt="CEMS di pabrik" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" loading="lazy">
           <img src="img/bg-3.jpg" alt="CEMS di pabrik" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" loading="lazy">
-          <img src="img/bg-4.jpg" alt="CEMS di pabrik" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000" loading="lazy">
         </div>
         <!-- Overlay with blur effect on sides -->
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70 pointer-events-none"></div>
@@ -111,16 +114,17 @@
         <div class="relative z-10">
           <div class="max-w-7.5xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen text-white flex items-center">
             <div class="max-w-3xl">
-              <h1 class="text-3xl sm:text-5xl font-bold leading-tight flex items-center gap-3">
-              
+              <h1 class="text-3xl sm:text-5xl font-bold leading-tight flex items-center gap-3" data-aos="fade-up">
                 PT MRENE WAE SOLUSI
               </h1>
-              <p class="mt-5 text-base sm:text-lg text-slate-200">Kami mengutamakan konsistensi dalam kualitas layanan sebagai bentuk hubungan jangka panjang yang berkelanjutan.</p>
-              <div class="mt-8 flex flex-wrap gap-4">
+              <p class="mt-5 text-base sm:text-lg text-slate-200" data-aos="fade-up" data-aos-delay="100">
+                Kami mengutamakan konsistensi dalam kualitas layanan sebagai bentuk hubungan jangka panjang yang berkelanjutan.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="200">
                 <a href="#form" class="px-6 py-3 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold transition-colors">Jadwalkan Konsultasi</a>
                 <a href="#layanan" class="px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/20 transition-colors">Lihat Layanan</a>
               </div>
-              <div class="mt-10 flex flex-wrap gap-6 text-sm">
+              <div class="mt-10 flex flex-wrap gap-6 text-sm" data-aos="fade-up" data-aos-delay="300">
                 <div class="flex items-center gap-2">
                   <svg class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -145,30 +149,30 @@
         </div>
       </section>
 
-      <section id="about" class="py-16 sm:py-20 snap vh relative pt-16">
+      <section id="about" class="py-16 sm:py-20 snap vh relative pt-16" data-aos="fade-up">
         <div class="absolute inset-0 w-full h-full">
           <img src="img/bg-cerobong1.png" alt="Background Cerobong" class="w-full h-full object-cover opacity-20">
         </div>
         <div class="max-w-7.5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 class="text-2xl font-semibold text-center pt-6">Tentang Kami</h2>
+          <h2 class="text-2xl font-semibold text-center pt-6" data-aos="fade-up">Tentang Kami</h2>
           <div class="mt-8 space-y-8">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
               <p class="mt-4 text-slate-700 text-justify">PT. Mrene Wae Solusi adalah Best CEMS End to End Solution Provider di Indonesia. Kami fokus mengembangkan solusi CEMS terbaik untuk perusahaan Anda, mulai dari kajian teknis, pengadaan peralatan, instalasi, kalibrasi, maintenance berkala, hingga audit kinerja bersama mitra lab terakreditasi.</p>
               <p class="mt-4 text-slate-700 text-justify">Didukung oleh tenaga ahli bersertifikasi dan berpengalaman dalam bidang CEMS dan pengendalian lingkungan, kami juga mengembangkan sistem pelaporan CEMS terintegrasi yang sesuai dengan regulasi KLHK.</p>
               <div class="mt-6 space-y-3">
-                <div class="flex items-start gap-3">
+                <div class="flex items-start gap-3" data-aos="fade-right" data-aos-delay="200">
                   <svg class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <p class="text-slate-700 text-justify">Solusi CEMS end-to-end sesuai regulasi KLHK & ISO 17025</p>
                 </div>
-                <div class="flex items-start gap-3">
+                <div class="flex items-start gap-3" data-aos="fade-right" data-aos-delay="300">
                   <svg class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <p class="text-slate-700 text-justify">Tim ahli bersertifikasi dengan pengalaman luas</p>
                 </div>
-                <div class="flex items-start gap-3">
+                <div class="flex items-start gap-3" data-aos="fade-right" data-aos-delay="400">
                   <svg class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                   </svg>
@@ -176,16 +180,16 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="500">
               <h3 class="text-xl font-semibold text-center">Visi & Misi</h3>
               <p class="mt-4 text-slate-700 text-center">Menjadi mitra tepercaya bagi industri dalam memastikan operasi stabil, data valid, dan lolos audit.</p>
               <p class="mt-2 text-slate-700 text-center">Pendekatan kami: teknis, responsif, dan pemecah masalah.</p>
               <div class="mt-6 grid md:grid-cols-2 gap-8">
-                <div>
+                <div data-aos="fade-right" data-aos-delay="600">
                   <h4 class="font-semibold text-emerald-700">Visi</h4>
                   <p class="mt-2 text-slate-700 text-justify">Menjadi penyedia solusi CEMS terbaik di Indonesia yang dapat diandalkan oleh industri untuk memenuhi kebutuhan pengendalian emisi dan kepatuhan terhadap regulasi lingkungan.</p>
                 </div>
-                <div>
+                <div data-aos="fade-right" data-aos-delay="700">
                   <h4 class="font-semibold text-emerald-700">Misi</h4>
                   <ul class="mt-2 space-y-2 list-disc pl-5 text-slate-700">
                     <li class="text-justify">Memberikan solusi CEMS end-to-end yang komprehensif dan terintegrasi</li>
@@ -201,12 +205,12 @@
       </section>
 
       
-      <section id="layanan" class="py-16 sm:py-20 snap vh bg-gradient-to-br from-white to-emerald-50 pt-16">
+      <section id="layanan" class="py-16 sm:py-20 snap vh bg-gradient-to-br from-white to-emerald-50 pt-16" data-aos="fade-up">
         <div class="max-w-7.5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-2xl font-semibold text-center pt-6">Produk & Layanan</h2>
-          <p class="mt-4 text-slate-700 max-w-3xl mx-auto text-center">Solusi CEMS end-to-end terbaik untuk kebutuhan industri Anda. Kami siap membantu pengembangan sistem aplikasi yang efektif dan aman.</p>
+          <h2 class="text-2xl font-semibold text-center pt-6" data-aos="fade-up">Produk & Layanan</h2>
+          <p class="mt-4 text-slate-700 max-w-3xl mx-auto text-center" data-aos="fade-up" data-aos-delay="100">Solusi CEMS end-to-end terbaik untuk kebutuhan industri Anda. Kami siap membantu pengembangan sistem aplikasi yang efektif dan aman.</p>
           <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div class="product-card rounded-xl border bg-white cursor-pointer hover:shadow-lg transition-shadow overflow-hidden" data-product="analyzer">
+            <div class="product-card rounded-xl border bg-white cursor-pointer hover:shadow-lg transition-shadow overflow-hidden" data-product="analyzer" data-aos="fade-up" data-aos-delay="200">
               <div class="h-48 overflow-hidden">
                 <img src="/img/service/mod-analyzer.png" alt="CEMS Analyzer" class="w-full h-full object-cover">
               </div>
@@ -214,7 +218,7 @@
                 <h3 class="text-lg font-semibold">CEMS Analyzer</h3>
               </div>
             </div>
-            <div class="product-card rounded-xl border bg-white cursor-pointer hover:shadow-lg transition-shadow overflow-hidden" data-product="gateway">
+            <div class="product-card rounded-xl border bg-white cursor-pointer hover:shadow-lg transition-shadow overflow-hidden" data-product="gateway" data-aos="fade-up" data-aos-delay="300">
               <div class="h-48 overflow-hidden">
                 <img src="/img/service/mode-cems.png" alt="CEMS Gateway" class="w-full h-full object-cover">
               </div>
@@ -222,7 +226,7 @@
                 <h3 class="text-lg font-semibold">CEMS Gateway</h3>
               </div>
             </div>
-            <div class="product-card rounded-xl border bg-white cursor-pointer hover:shadow-lg transition-shadow overflow-hidden" data-product="calibration">
+            <div class="product-card rounded-xl border bg-white cursor-pointer hover:shadow-lg transition-shadow overflow-hidden" data-product="calibration" data-aos="fade-up" data-aos-delay="400">
               <div class="h-48 overflow-hidden">
                 <img src="/img/service/mod-test.png" alt="CEMS Calibration & Test" class="w-full h-full object-cover">
               </div>
@@ -230,7 +234,7 @@
                 <h3 class="text-lg font-semibold">CEMS Calibration & Test</h3>
               </div>
             </div>
-            <div class="product-card rounded-xl border bg-white cursor-pointer hover:shadow-lg transition-shadow overflow-hidden" data-product="support">
+            <div class="product-card rounded-xl border bg-white cursor-pointer hover:shadow-lg transition-shadow overflow-hidden" data-product="support" data-aos="fade-up" data-aos-delay="500">
               <div class="h-48 overflow-hidden">
                 <img src="/img/service/mod-support.png" alt="Support & Maintenance" class="w-full h-full object-cover">
               </div>
@@ -243,13 +247,16 @@
       </section>
 
       
-      <section id="clients" class="py-16 sm:py-20 snap vh bg-gradient-to-br from-emerald-50 to-white pt-16">
-        <div class="max-w-7.5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-2xl font-semibold text-center pt-6">Klien</h2>
-          <p class="mt-2 text-slate-700 text-center">Kami telah lama bekerja sama dengan pelanggan kami. Kami mengerti dan percaya bahwa perusahaan kami mampu memenuhi kebutuhan pelanggan kami dari berbagai aspek.</p>
+      <section id="clients" class="py-16 sm:py-20 snap vh relative pt-16" data-aos="fade-up">
+        <div class="absolute inset-0 w-full h-full">
+          <img src="img/bg-cerobong1.png" alt="Background Cerobong" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="max-w-7.5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <h2 class="text-2xl font-semibold text-center pt-6" data-aos="fade-up">Klien</h2>
+          <p class="mt-2 text-slate-700 text-center" data-aos="fade-up" data-aos-delay="100">Kami telah lama bekerja sama dengan pelanggan kami. Kami mengerti dan percaya bahwa perusahaan kami mampu memenuhi kebutuhan pelanggan kami dari berbagai aspek.</p>
           
           <!-- Client Logos Slider -->
-          <div id="client-slider" class="mt-6 overflow-hidden">
+          <div id="client-slider" class="mt-6 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
             <div class="flex gap-8 items-center whitespace-nowrap will-change-transform animate-slide">
               <!-- First set of logos -->
               <img src="img/client/client-1.jpg" alt="Client" class="h-40 object-contain max-w-none" loading="lazy">
@@ -398,13 +405,13 @@
       </section>
 
       
-      <section id="form" class="py-16 sm:py-20 snap vh bg-gradient-to-br from-white to-slate-100 pt-16">
+      <section id="form" class="py-16 sm:py-20 snap vh bg-gradient-to-br from-white to-slate-100 pt-16" data-aos="fade-up">
         <div class="max-w-7.5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-2xl font-semibold text-center pt-6">Kontak</h2>
-          <p class="mt-2 text-slate-700 text-center">Hubungi kami untuk informasi lebih lanjut</p>
+          <h2 class="text-2xl font-semibold text-center pt-6" data-aos="fade-up">Kontak</h2>
+          <p class="mt-2 text-slate-700 text-center" data-aos="fade-up" data-aos-delay="100">Hubungi kami untuk informasi lebih lanjut</p>
           <div class="mt-8 grid md:grid-cols-3 gap-8">
             <!-- Contact Info Card -->
-            <div class="md:col-span-2 p-6 rounded-xl border bg-white">
+            <div class="md:col-span-2 p-6 rounded-xl border bg-white" data-aos="fade-right" data-aos-delay="200">
               <h3 class="text-xl font-semibold mb-4">Informasi Kontak</h3>
               
               <!-- Email -->
@@ -438,7 +445,7 @@
               <div class="flex items-start gap-3 mt-4">
                 <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center mt-1">
                   <svg class="w-4 h-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
@@ -449,13 +456,13 @@
               </div>
               
               <!-- Google Maps Embed -->
-              <div class="mt-4 rounded-xl overflow-hidden border h-72">
+              <div class="mt-4 rounded-xl overflow-hidden border h-72" data-aos="fade-up" data-aos-delay="300">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.659822891243!2d106.8617608!3d-6.2419793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f39ef06dd335%3A0x73198aa72145e38e!2sPT.%20MRENE%20WAE%20SOLUSI%20(MWS%2FCAA)!5e0!3m2!1sid!2sid!4v1718850069630!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
             
             <!-- Contact Form -->
-            <div class="md:col-span-1">
+            <div class="md:col-span-1" data-aos="fade-left" data-aos-delay="200">
               <div class="p-6 rounded-xl border bg-white">
                 <h3 class="text-xl font-semibold">Kirimkan pesan kepada kami</h3>
                 
@@ -498,9 +505,9 @@
         <div class="relative w-screen max-w-full -translate-x-full transform transition duration-300 ease-in-out max-h-7.5">
           <div class="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
             <div class="px-6 py-6 bg-gray-50">
-              <div class="flex items-start justify-between">
-                <h3 id="modal-title" class="text-2xl font-semibold"></h3>
-                <button id="close-modal" class="text-gray-400 hover:text-gray-500">
+              <div class="flex items-center justify-between">
+                <h3 id="modal-title" class="text-2xl font-semibold ml-auto"></h3>
+                <button id="close-modal" class="text-gray-400 hover:text-gray-500 ml-4">
                   <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -513,18 +520,26 @@
       </div>
     </div>
 
-    <footer class="border-t">
+    <footer class="border-t" data-aos="fade-up">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-2 gap-6">
-        <div>
+        <div data-aos="fade-right" data-aos-delay="100">
           <div class="flex items-center gap-3">
             <img src="img/icon-msw.png" alt="Logo MWS" class="h-8 w-auto rounded">
             <span class="font-semibold">MWS – PT. Mrene Wae Solusi</span>
           </div>
         </div>
         
-        <div class="flex justify-center items-center text-sm text-slate-600">© 2025 MWS. Semua hak cipta dilindungi. • Kebijakan Privasi</div>
+        <div class="flex justify-center items-center text-sm text-slate-600" data-aos="fade-left" data-aos-delay="100">© 2025 MWS. Semua hak cipta dilindungi. • Kebijakan Privasi</div>
       </div>
     </footer>
     <script src="assets/js/main.js"></script>
+    <!-- AOS Initialization -->
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out'
+      });
+    </script>
   </body>
 </html>
